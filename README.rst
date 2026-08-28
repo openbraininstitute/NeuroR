@@ -126,14 +126,14 @@ Contributing
 ------------
 
 If you want to improve the project or you see any issue, every contribution is welcome.
-Please check the `contribution guidelines <https://github.com/BlueBrain/NeuroR/blob/master/CONTRIBUTING.md>`__ for more information.
+Please check the `contribution guidelines <https://github.com/openbraininstitute/NeuroR/blob/master/CONTRIBUTING.md>`__ for more information.
 
 License
 -------
 
 NeuroR is licensed under the terms of the GNU Lesser General Public License version 3.
-Refer to `COPYING.LESSER <https://github.com/BlueBrain/NeuroR/blob/master/COPYING.LESSER>`__
-and `COPYING <https://github.com/BlueBrain/NeuroR/blob/master/COPYING>`__ for details.
+Refer to `COPYING.LESSER <https://github.com/openbraininstitute/NeuroR/blob/master/COPYING.LESSER>`__
+and `COPYING <https://github.com/openbraininstitute/NeuroR/blob/master/COPYING>`__ for details.
 
 Copyright (c) 2019-2024 Blue Brain Project/EPFL
 
@@ -141,7 +141,7 @@ Copyright (c) 2019-2024 Blue Brain Project/EPFL
               :target: https://travis-ci.com/BlueBrain/NeuroR
 
 .. |license| image:: https://img.shields.io/pypi/l/neuror
-                :target: https://github.com/BlueBrain/NeuroR/blob/master/COPYING.LESSER
+                :target: https://github.com/openbraininstitute/NeuroR/blob/master/COPYING.LESSER
 
 .. |docs| image:: https://readthedocs.org/projects/neuror/badge/?version=latest
              :target: https://neuror.readthedocs.io/en/latest/?badge=latest

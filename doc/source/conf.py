@@ -63,19 +63,14 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx-bluebrain-theme'
+html_theme = "obi_sphinx_theme"
 html_title = 'NeuroR'
 html_show_sourcelink = False
-html_theme_options = {
-    "repo_url": "https://github.com/BlueBrain/NeuroR/",
-    "repo_name": "BlueBrain/NeuroR"
-}
 
 intersphinx_mapping = {
     "morphio": ("https://morphio.readthedocs.io/en/latest", None),
@@ -89,8 +84,6 @@ intersphinx_mapping = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
-
-
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
