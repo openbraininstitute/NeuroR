@@ -90,4 +90,4 @@ repository:
     ```shell
     git pull --ff upstream master
     ```
-[github]: https://github.com/BlueBrain/neuror
+[github]: https://github.com/openbraininstitute/neuror

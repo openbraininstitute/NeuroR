@@ -40,9 +40,9 @@ setup(
         ],
         'docs': [
             'sphinx-autorun>=1.1.1',
-            'sphinx-bluebrain-theme>=0.2.4',
+            "obi-sphinx-theme>=2.0.0",
             'sphinx-click>=2.5.0',
-            'sphinx>=2.0.0',
+            'sphinx>=8.2,<10',
         ],
     },
     packages=find_packages(exclude=('tests',)),
