@@ -1,5 +1,8 @@
+[MAIN]
+extension-pkg-allow-list=numpy,lxml,morphio,scipy
+
 [MESSAGES CONTROL]
-disable=fixme,invalid-name,len-as-condition,no-else-return,useless-object-inheritance,import-outside-toplevel,unspecified-encoding
+disable=fixme,invalid-name,len-as-condition,no-else-return,useless-object-inheritance,import-outside-toplevel,unspecified-encoding,too-many-positional-arguments
 
 
 [FORMAT]
@@ -47,5 +50,6 @@ ignore-docstrings=yes
 
 #as of numpy 1.8.0, name resolution seems to be a problem.  Ignore lookups in numpy
 ignored-classes=numpy,list,morphio,scipy
+ignored-modules=scipy,scipy.optimize,scipy.special
 
-extension-pkg-whitelist=numpy,lxml,morphio,scipy
+extension-pkg-allow-list=numpy,lxml,morphio,scipy
