@@ -35,10 +35,24 @@
     - python -mtox $TOX_OPTIONS
     - section_end section_tox
 
-py39:
-  image: python:3.9
+py310:
+  image: python:3.10
   extends: .tox-template
   variables:
     # Directory containing setup.py and tox.ini
     PYTHON_PROJECT_DIR: .
-    TOXENV: py39
+    TOXENV: py310
+
+py311:
+  image: python:3.11
+  extends: .tox-template
+  variables:
+    PYTHON_PROJECT_DIR: .
+    TOXENV: py311
+
+py312:
+  image: python:3.12
+  extends: .tox-template
+  variables:
+    PYTHON_PROJECT_DIR: .
+    TOXENV: py312
