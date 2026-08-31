@@ -16,9 +16,7 @@ from neuror.cut_plane.planes import _get_displaced_pos
 
 try:
     import dash
-    import dash_core_components as dcc
-    import dash_html_components as html
-    from dash.dependencies import Input, Output, State
+    from dash import Input, Output, State, dcc, html
     from plotly_helper.neuron_viewer import NeuronBuilder
 except ImportError as e:
     raise ImportError(
@@ -201,7 +199,7 @@ def display_click_data(rot_x, rot_y, rot_z, transl_x, transl_y, transl_z, hide, 
 
 
 @app.callback(
-    dash.dependencies.Output('bar', 'figure'),
+    Output('bar', 'figure'),
     [
         Input('rotate-x-slider', 'value'),
         Input('rotate-y-slider', 'value'),
@@ -250,7 +248,7 @@ def update_output(rot_x, rot_y, rot_z, transl_x, transl_y, transl_z):
 
 
 @app.callback(
-    dash.dependencies.Output('optimized', 'data-*'),
+    Output('optimized', 'data-*'),
     [Input('button', 'n_clicks')],
     [
         State('rotate-x-slider', 'value'),
@@ -323,7 +321,7 @@ def update_post_optim_z_translate(params):
 
 
 @app.callback(
-    dash.dependencies.Output('click-data', 'children'),
+    Output('click-data', 'children'),
     [Input('export', 'n_clicks')],
     [State('rotate-x-slider', 'value'),
      State('rotate-y-slider', 'value'),
